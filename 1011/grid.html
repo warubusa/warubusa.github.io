@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="meyer.css"> -->
+    <style>
+        /* global 全域設定 */
+        * {
+            font-family: "微軟正黑體";
+            box-sizing: border-box;
+        }
+
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        ol,
+        li,
+        img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .full-width {
+            width: 100%;
+
+        }
+
+        .fix-width {
+            width: 1200px;
+            margin: auto;
+        }
+
+        /* 所占一橫列的百分比 */
+        .col-1 {
+            width: calc(100%/12*1);
+        }
+
+        .col-2 {
+            width: calc(100%/12*2);
+        }
+
+        .col-3 {
+            width: calc(100%/12*3);
+        }
+
+        .col-4 {
+            width: calc(100%/12*4);
+        }
+
+        .col-5 {
+            width: calc(100%/12*5);
+        }
+
+        .col-6 {
+            width: calc(100%/12*6);
+        }
+
+        .col-7 {
+            width: calc(100%/12*7);
+        }
+
+        .col-8 {
+            width: calc(100%/12*8);
+        }
+
+        .col-9 {
+            width: calc(100%/12*9);
+        }
+
+        .col-10 {
+            width: calc(100%/12*10);
+        }
+
+        .col-11 {
+            width: calc(100%/12*11);
+        }
+
+        .col-12 {
+            width: calc(100%/12*12);
+        }
+
+        /* ^為字首包含COL,*整個包含,$字尾包含 */
+        h1[class^="col"] {
+            color: red;
+        }
+
+        [class*="col"] {
+            float: left;
+            padding: 15px;
+        }
+
+        [class$="8"] {
+            color: blue;
+        }
+        #banner{
+            background-image: url(https://source.unsplash.com/random/1600x600);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 500px 0;
+
+
+        }
+        #about{
+            background-color: rgb(59, 92, 184);
+            padding:50px 0;
+        }
+        #service{
+            padding:100px 0;
+        }
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="full-width" id="banner"></div>
+    <div class="full-width" id="about">
+        <div class="fix-width clearfix ">
+            <div class="col-6 ">
+                <h1>ccccc</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <a href="#">more</a>
+            </div>
+            <div class="col-6 ">
+                    <h1>ccccc</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#">more</a>
+                </div>
+        </div>
+
+    </div>
+    <div class="full-width" id="service">
+        <div class="fix-width clearfix" >
+            <div class="col-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div><div class="col-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div><div class="col-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    
+
+
+</body>
+
+</html>
